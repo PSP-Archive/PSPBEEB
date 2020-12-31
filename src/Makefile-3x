@@ -68,18 +68,19 @@ PSP_EBOOT_ICON = icon0.png
 
 DEFAULT_CFLAGS = $(shell $(SDL_CONFIG) --cflags)
 
-PSP_FW_VERSION=303
+PSP_FW_VERSION=500
 PSPBEEB_VERSION=v1.1.0
 MORE_CFLAGS=-O3 -Wall \
  -DPSPFW30X \
  -DUSE_PSP_IRKEYB \
  -DPSPBEEB_VERSION=\"$(PSPBEEB_VERSION)\" \
- -DNO_STDIO_REDIRECT
+ -DNO_STDIO_REDIRECT -G0
+ -std=c++03
 
 CFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS)
 CXXFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS) -fno-exceptions -fno-rtti
 
-LIBS = -lpspirkeyb -lstdc++ -lpsppower -lSDL_image -lSDL -lpng -ljpeg -lpspaudio -lpspgu -lpsphprm -lz -lm
+LIBS = -lstdc++ -lSDL_image -lSDL -lGL -lpspirkeyb -lpsprtc -lpsppower -lpspvfpu -lpng -ljpeg -lpspaudio -lpspgu -lpsphprm -lz -lm
 
 BUILD_PRX=1
 
