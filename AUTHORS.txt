@@ -1,0 +1,9 @@
+BeebEm : BBC Micro Emulator for Unix/X11 and Windows
+
+  1994 David Alan Gilbert first Unix version
+  1997 Richard Gellman and Mike Wyatt first windows version
+  2005 David Eggleston new version for FreeBSD based on GTK/SDL.
+  
+PSPBeeB : Porting on PSP
+
+  Ludovic Jacomme alias Zx-81 (zx81.zx81@gmail.com)

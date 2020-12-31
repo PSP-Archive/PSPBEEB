@@ -1,0 +1,90 @@
+1.1.0
+
+- Speed improvements (but still slow ~40 fps)
+- IR keyboard support !
+- Now compatible with custom firmwares 3.x and PSP-slim
+- Display and save thumbnail images for each save state
+- Add option to display fps rate
+- Add a simple intro splash screen  
+- Analog pad can now be used in the file requester
+  to move faster through the disk/state lists
+- Option to prevent the blue led to be displayed when 
+  L or R are pressed
+- All render modes use GU (smooth mode)
+- Support iso8859-1 fonts in print text functions 
+  (might be useful to translate menus in german, french ...)
+- Major bug fix in video emulation functions (psp freeze ...)
+- Other bug fix and code cleaning
+
+1.0.8
+
+- Add two new commands to run games (*EXEC and *RUN).
+- New file format for run.txt (see README for details)
+- Add help menu
+- New graphical functions with new smoother render modes.
+  It uses the PSP GPU for rendering, it does not run faster, 
+  but it's a lot smoother.
+- Save state dates are displayed in the emulator window
+  (it's now easier to identify and to load the right save state slot)
+- Bug fix in Rom file requester 
+
+1.0.7
+
+- Multiple keyboard mapping feature developped by Pou-chan :
+  You can now toggle between 3 different keyboard mapping using 
+  LTrigger and RTrigger keys
+- Bug fix in the keyboard skin chooser (that made the emu crashed)
+- Add new keyboard files from Bah and Pou-chan
+
+1.0.6
+
+- Icons and background images designed by Mr Nick666
+- Emulator menus reorganisation (new menu for settings)
+- New feature to save and load a distinct setting file for each games
+- Delete files option (in the file selector)
+- Add keyboard change skin option 
+- The percent of battery left is now displayed in the emulator window
+- Add a watchdog to automatically return to the emulator menu
+- when  the battery is very low (< 5%)
+  (you can add your own virtual keyboard images in the graphics directory).
+- Bug fix and code cleaning
+
+1.0.5
+
+- In the key mapping editor, PSP keys can now 
+  be left unassigned
+- Disk image can now be loaded on the two drives 
+  of the BBC Micro (and not only on drive 0).
+
+1.0.4
+
+- Fix CAPSLOCK bug 
+- Fix auto-load bug with clock at 222 on 1.5FW
+
+1.0.3
+
+- New Speed optimization 
+- Add screen resize menu (x1.25, x1.5, x2)
+- Add .img disk file support
+- Add a file (run.txt) to specify association between
+  the disk name and the name of the program to run
+  (file yyy.img -> CHAIN"xxx")
+- Add Analog pad mapping  (in .kbd file format 
+  and in the key mapping editor)
+- Add shortcut to *CAT and CHAIN"xxx" command
+- Option to swap between cursor and analog pad is 
+  now working
+
+1.0.2
+
+- Add missing keys in the virtual keyboard
+- Add Zip archive support for both disk files (.ssd ...),
+  keyboard (.kbd) and state files (.uef).
+- Add Load/Save/Del states menu
+- Add menu to change BBC Model
+- Add frameskip option
+- Speed optimization (frame display)
+
+1.0.1
+
+- Intial release
